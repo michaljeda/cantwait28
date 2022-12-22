@@ -38,7 +38,7 @@ class _AddPageState extends State<AddPage> {
           builder: (context, state) {
             return Scaffold(
               appBar: AppBar(
-                title: const Text('Add new upcoming title'),
+                title: const Text('Dodaj tytuł filmu'),
                 actions: [
                   IconButton(
                     onPressed: _imageURL == null ||
@@ -108,8 +108,8 @@ class _AddPageBody extends StatelessWidget {
           onChanged: onTitleChanged,
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
-            hintText: 'Matrix 5',
-            label: Text('Title'),
+            hintText: 'Nazwa filmu lub serialu',
+            label: Text('Tytuł'),
           ),
         ),
         const SizedBox(height: 20),
@@ -118,7 +118,7 @@ class _AddPageBody extends StatelessWidget {
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
             hintText: 'http:// ... .jpg',
-            label: Text('Image URL'),
+            label: Text('Adres URL grafiki'),
           ),
         ),
         const SizedBox(height: 20),
@@ -134,7 +134,7 @@ class _AddPageBody extends StatelessWidget {
             );
             onDateChanged(selectedDate);
           },
-          child: Text(selectedDateFormatted ?? 'Choose release date'),
+          child: Text(selectedDateFormatted ?? 'Wybierz datę premiery'),
         ),
       ],
     );

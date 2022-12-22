@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Can\'t Wait 🤩'),
+        title: const Text('Nie mogę się doczekać! 🤩'),
       ),
       body: const _HomePageBody(),
       floatingActionButton: FloatingActionButton(
@@ -161,7 +161,7 @@ class _ListViewItem extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text('days left'),
+                      Text('dni pozostało'),
                     ],
                   ),
                 ),
